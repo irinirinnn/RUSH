@@ -8,7 +8,6 @@
       </header>
       <section class="modal-card-body">
         <input class="input is-rounded" type="text" placeholder="Search">
-        {{ choosed }}
         <div class="box" style="padding: 12px; overflow: scroll; height: 50vh; background-color: #B5DCDC;">
           <brand v-model="choosed" v-for="(namebrand, index) in brandloop" :key="index" :name="namebrand.name" :stock="namebrand.isOutOfStock"/>
         </div>
