@@ -1,5 +1,6 @@
 <template>
   <div class="container is-fullhd" style="height:100%;">
+    <div :style="bg1"></div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item">
@@ -39,7 +40,6 @@
         </div>
       </div>
     </div>
-    <div :style="bg1"></div>
   </div>
 </template>
 
@@ -62,7 +62,7 @@ export default {
         backgroundPosition: 'center',
         height: '100vh',
         width: '100vw',
-        zIndex: '-1',
+        zIndex: '0',
         top: '0px',
         position: 'absolute',
         filter: 'grayscale(100%)',

@@ -7,15 +7,16 @@
         <button class="delete" aria-label="close" @click="closeModal"></button>
       </header>
       <section class="modal-card-body">
-        <input class="input is-rounded" type="text" placeholder="Search">
-        <div class="box" style="padding: 12px; overflow: scroll; height: 50vh; background-color: #B5DCDC;">
+        <div class="control has-icons-right">
+          <input class="input is-rounded" type="text" placeholder="Search">
+          <span class="icon is-small is-right">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <div class="box" style="padding: 12px; overflow-y: scroll; height: 50vh; background-color: #B5DCDC; margin-top: 12px;">
           <brand v-model="choosed" v-for="(namebrand, index) in brandloop" :key="index" :name="namebrand.name" :stock="namebrand.isOutOfStock"/>
         </div>
       </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
-      </footer>
     </div>
   </div>
 </template>
@@ -77,4 +78,8 @@ export default {
 </script>
 
 <style scoped>
+.modal-card-body {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
 </style>
