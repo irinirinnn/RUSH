@@ -10,7 +10,7 @@
       <div class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <div class="button is-rounded is-dark is-inverted is-outlined">
+            <div class="button is-rounded is-dark is-inverted is-outlined" disabled>
                 Log in
             </div>
           </div>
