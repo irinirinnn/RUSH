@@ -52,7 +52,8 @@ export default {
       this.$emit('deleteFromList', value)
     },
     gotoRoute: function () {
-      let link = 'https://rush.serveo.net/demo/map/sample/sample/route/'
+      // let link = 'https://rush.serveo.net/demo/map/sample/sample/route/'
+      let link = 'http://localhost:8000/demo/map/sample/sample/route/'
       let route = ''
       for (const key in this.itemList) {
         if (this.itemList.hasOwnProperty(key)) {

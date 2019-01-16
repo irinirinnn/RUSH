@@ -93,7 +93,8 @@ export default {
       for (const key in this.category) {
         if (this.category.hasOwnProperty(key)) {
           const element = this.category[key]
-          if (element.toLowerCase().indexOf(search) >= 0) {
+          if (this.itemList.indexOf(key) >= 0) ;
+          else if (element.toLowerCase().indexOf(search) >= 0) {
             if (i % 2 === 1) {
               output.push({
                 nameLeft: element,
@@ -110,7 +111,6 @@ export default {
           }
         }
       }
-      console.log(output)
       return output
     }
   },
@@ -141,6 +141,10 @@ export default {
 .navbar {
   background-color: #FDB849;
   height: 60px;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
 }
 
 .navbar-menu {
