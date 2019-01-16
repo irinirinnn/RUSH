@@ -19,6 +19,7 @@
     <div class="columns">
       <div class="column columnPadding">
         <div class="control has-icons-right">
+          <br><br><br>
           <input class="input is-rounded" type="text" placeholder="Search" v-model="searchItems">
           <span class="icon is-small is-right">
             <i class="fas fa-search"></i>
